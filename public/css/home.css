@@ -1,0 +1,96 @@
+.hero {
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/home.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: monospace;
+}
+
+h1 {
+  font-family: 'Courier New', monospace;
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #b58bdc 50%, #e242e0 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Pilihan tambahan untuk efek hover */
+h1:hover {
+  color: #b12aaf; /* Ubah warna saat dihover sesuai keinginan Anda */
+}
+
+
+h2 {
+  position: relative;
+  margin: 0 2,5rem; /* Sesuaikan nilai sesuai kebutuhan */
+  padding: .25rem 4rem; /* Sesuaikan nilai sesuai kebutuhan */
+  background: rgba(142, 28, 28, 0.5);
+  color: white;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 0.25em;
+}
+
+
+
+
+.hero a {
+  width: 100px;
+  font-size: 1.5em;
+  background-color: #b12aaf;
+  color: #ffffff;
+  font-weight: bolder;
+  padding: .5em 1em;
+  margin: 0 auto;
+}
+
+.home-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.category {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  height: 250px;
+  border-radius: .5rem;
+  transition: transform 100ms ease-out;
+}
+.category .screen{
+  position: absolute;
+  inset: 0;
+  background-color : rgba(0, 0, 0, 0.384);
+}
+.category h3{
+  position: absolute;
+  margin: 10px;
+  color: white;
+  font-family: monospace;
+  font-size: 1.5em;
+  bottom: 0;
+}
+
+.category:hover {
+  transform: translateY(-10px);
+}
+
+
+@media (max-width: 720px) {
+  .home-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
